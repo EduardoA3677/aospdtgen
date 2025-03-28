@@ -967,8 +967,7 @@ IGNORE_PATTERNS = [re.compile(pattern) for pattern in [
 
 	# TODO: Find a cleaner way to exclude AOSP interfaces libs,
 	# We're currently excluding all AOSP interfaces libs except impl
-	r"^(?!lib(64)?/(hw/)?android\\..*\\..*-impl.so)lib(64)?/(hw/)?android\\..*\\..*.so",
-
+	r"^(?!lib(64)?/(hw/)?android\\..*\\..*-impl.*.so)lib(64)?/(hw/)?android\\..*\\..*.so",
 	# Versioned libprotobuf library
 	"lib(64)?/libprotobuf-cpp-(full|lite)-.*.so",
 ]]
