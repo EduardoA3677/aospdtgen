@@ -13,6 +13,7 @@ class PowerSection(Section):
 		"vendor-oplus-hardware-power-powermonitor",
 		"vendor.qti.hardware.power.powermodule",
 		"vendor.mediatek.hardware.mtkpower",
+		"vendor.mediatek.hardware.power",
 	]
 	hardware_modules = [
 		"power",

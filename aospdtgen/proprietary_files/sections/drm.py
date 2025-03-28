@@ -10,6 +10,7 @@ class DrmSection(Section):
 	name = "DRM"
 	interfaces = [
 		"android.hardware.drm",
+		"vendor.mediatek.hardware.keymanage",
 	]
 	apexes = [
 		"com.google.android.widevine.nonupdatable",
@@ -20,8 +21,10 @@ class DrmSection(Section):
 	folders = [
 		"lib/mediacas",
 		"lib/mediadrm",
+		"lib/mtkdrm",
 		"lib64/mediacas",
 		"lib64/mediadrm",
+		"lib64/mtkdrm",
 	]
 	properties_prefixes = {
 		"drm.service.enabled": True,

@@ -22,6 +22,7 @@ class DisplaySection(Section):
 		"vendor.display.config",
 		"vendor.display.postproc",
 		"vendor.mediatek.hardware.composer_ext",
+		"vendor.mediatek.hardware.dfps",
 		"vendor.mediatek.hardware.mms",
 		"vendor.mediatek.hardware.pq",
 		"vendor.oplus.hardware.displaycolorfeature",

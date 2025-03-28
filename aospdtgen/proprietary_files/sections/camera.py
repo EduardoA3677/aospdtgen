@@ -17,6 +17,7 @@ class CameraSection(Section):
 		"motorola.hardware.camera.imgtuner",
 		"vendor.mediatek.hardware.camera.atms",
 		"vendor.mediatek.hardware.camera.bgservice",
+		"vendor.mediatek.hardware.camera.device",
 		"vendor.mediatek.hardware.camera.frhandler",
 		"vendor.mediatek.hardware.camera.isphal",
 		"vendor.mediatek.hardware.camera.lomoeffect",

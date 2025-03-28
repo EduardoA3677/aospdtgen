@@ -12,6 +12,7 @@ class AudioSection(Section):
 		"android.hardware.audio",
 		"android.hardware.audio.common",
 		"android.hardware.audio.effect",
+		"vendor.mediatek.hardware.audio",
 		"vendor.oplus.hardware.binaural_record",
 		"vendor.oplus.hardware.virtual_device.audio",
 		"vendor.qti.hardware.audiohalext",
