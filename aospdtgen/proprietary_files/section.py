@@ -72,7 +72,7 @@ class Section:
 				skip = False
 
 				for interface in known_interfaces:
-					if match(f"{interface}(@[0-9]+\\.[0-9]+|-).*\\.so", lib):
+					if match(fr"{interface}(@[0-9]+\\.[0-9]+|-).*\\.so", lib):
 						skip = True
 						break
 
@@ -123,11 +123,11 @@ class Section:
 				return True
 
 			# Passthrough impl (only HIDL)
-			if (is_relative_to(file, "lib/hw") or is_relative_to(file, "lib64/hw")) and match(f"{interface}@[0-9]+\\.[0-9]+-impl\\.so", file.name):
+			if (is_relative_to(file, "lib/hw") or is_relative_to(file, "lib64/hw")) and match(fr"{interface}@[0-9]+\\.[0-9]+-impl\\.so", file.name):
 				return True
 
 			# Interface libs (AIDL and HIDL)
-			if (is_relative_to(file, "lib") or is_relative_to(file, "lib64")) and match(f"{interface}(@[0-9]+\\.[0-9]+|-).*\\.so", file.name):
+			if (is_relative_to(file, "lib") or is_relative_to(file, "lib64")) and match(fr"{interface}(@[0-9]+\\.[0-9]+|-).*\\.so", file.name):
 				return True
 
 		# Hardware modules
@@ -152,7 +152,7 @@ class Section:
 		# Init scripts
 		if is_relative_to(file, "etc/init"):
 			for binary in self.binaries:
-				if match(f"(init)?(.)?{binary}\\.rc", file.name):
+				if match(fr"(init)?(.)?{binary}\\.rc", file.name):
 					return True
 
 		# Libraries
