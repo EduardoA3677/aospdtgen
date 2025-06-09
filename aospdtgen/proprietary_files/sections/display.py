@@ -90,7 +90,7 @@ class DisplayPixelworksSection(Section):
 		"vendor.pixelworks.hardware.feature.irisfeature",
 	]
 	patterns = [
-		"(.*/)?firmware/pxlw_.*\..*",
+		r"(.*/)?firmware/pxlw_.*\..*",
 	]
 
 class DisplayConfigsSection(Section):
@@ -111,8 +111,8 @@ class DisplayFirmwareSection(Section):
 		"gpu/kbc",
 	]
 	patterns = [
-		"(.*/)?firmware/a[0-9]+_.*\..*",
-		"(.*/)?firmware/iris.*\..*",
+		r"(.*/)?firmware/a[0-9]+_.*\..*",
+		r"(.*/)?firmware/iris.*\..*",
 	]
 
 register_section(DisplaySection)

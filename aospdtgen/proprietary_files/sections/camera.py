@@ -62,16 +62,16 @@ class CameraSection(Section):
 		"lib64/camera",
 	]
 	patterns = [
-		"lib(64)?/com.qti.feature2\..*\.so",
-		"lib(64)?/libCamera_.*\.so",
-		"lib(64)?/libactuator_.*\.so",
-		"lib(64)?/libarcsoft_.*\.so",
-		"lib(64)?/libcamx.*\.so",
-		"lib(64)?/libchromatix_.*\.so",
-		"lib(64)?/libmmcamera_.*\.so",
-		"lib(64)?/libmmcamera2_.*\.so",
-		"lib(64)?/libmtkcam_.*\.so",
-		"lib(64)?/libois_.*\.so",
+		r"lib(64)?/com.qti.feature2\..*\.so",
+		r"lib(64)?/libCamera_.*\.so",
+		r"lib(64)?/libactuator_.*\.so",
+		r"lib(64)?/libarcsoft_.*\.so",
+		r"lib(64)?/libcamx.*\.so",
+		r"lib(64)?/libchromatix_.*\.so",
+		r"lib(64)?/libmmcamera_.*\.so",
+		r"lib(64)?/libmmcamera2_.*\.so",
+		r"lib(64)?/libmtkcam_.*\.so",
+		r"lib(64)?/libois_.*\.so",
 	]
 	properties_prefixes = {
 		"camera.": False,
@@ -108,7 +108,7 @@ class CameraMotorSection(Section):
 		"etc/step_motor",
 	]
 	patterns = [
-		"lib(64)?/libmivendor_module_.*\.so",
+		r"lib(64)?/libmivendor_module_.*\.so",
 	]
 
 register_section(CameraSection)
